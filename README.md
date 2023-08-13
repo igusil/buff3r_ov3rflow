@@ -4,7 +4,7 @@ buffer overflow
 1. Identificar a vulnerabilidade - OK
    
 	1.1 - Black Box (fuzzing) - OK
-	1.2 - Reversing - OK
+   	1.2 - Reversing - OK
 	
 3. Verificar quantos bytes são necessários para chegar no RET
    

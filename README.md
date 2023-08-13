@@ -6,7 +6,7 @@ buffer overflow
 	1.2 - Reversing - OK
 	
 2. Verificar quantos bytes são necessários para chegar no RET
-	2.1 - https://wiremask.eu/tools/buffer-overflow-pattern-generator/
+	2.1 - https://wiremask.eu/tools/buffer-overflow-pattern-generator
 	
 	2.2 - Metasploit
 	

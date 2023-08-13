@@ -2,19 +2,21 @@
 buffer overflow
 
 1. Identificar a vulnerabilidade - OK
+   
 	1.1 - Black Box (fuzzing) - OK
 	1.2 - Reversing - OK
 	
-2. Verificar quantos bytes são necessários para chegar no RET
+3. Verificar quantos bytes são necessários para chegar no RET
+   
 	2.1 - https://wiremask.eu/tools/buffer-overflow-pattern-generator
 	
 	2.2 - Metasploit
 	
-3. Verificar "bad bytes"
+4. Verificar "bad bytes"
 
-4. Criar shellcode sem os bad bytes
+5. Criar shellcode sem os bad bytes
 
-5. Verificar como chamar o shellcode
+6. Verificar como chamar o shellcode
 
 6.Exploit
 

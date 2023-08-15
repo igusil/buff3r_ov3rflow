@@ -23,7 +23,7 @@ primeiros passos depurando a aplicação vulnerável, através do dbg rodamos a 
 
 ![Screenshot from 2023-08-14 22-08-15](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/796abfe1-d62b-4160-83a4-11b7af56e7e3)
 
-O pattern generator do msf foi usado para gerar 2000 bytes como examplo de que pode ser feito por esta ferramenta:
+O pattern generator do msf foi usado para gerar 2000 bytes como exemplo de que pode ser feito por esta ferramenta:
 
 ![Screenshot from 2023-08-14 22-08-36](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/3693beaf-932c-40be-8b10-abe679643fdf)
 

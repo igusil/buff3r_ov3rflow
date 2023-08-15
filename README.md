@@ -11,12 +11,16 @@ buffer overflow
 	2.1 - https://wiremask.eu/tools/buffer-overflow-pattern-generator
 	
 	2.2 - Metasploit
+
+![Screenshot from 2023-08-14 22-08-15](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/796abfe1-d62b-4160-83a4-11b7af56e7e3)
+
+
 	
-4. Verificar "bad bytes"
+5. Verificar "bad bytes"
 
-5. Criar shellcode sem os bad bytes
+6. Criar shellcode sem os bad bytes
 
-6. Verificar como chamar o shellcode
+7. Verificar como chamar o shellcode
 
 6.Exploit
 

@@ -14,6 +14,14 @@ buffer overflow
 
 ![Screenshot from 2023-08-14 22-08-15](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/796abfe1-d62b-4160-83a4-11b7af56e7e3)
 
+O pattern generator do msf foi usado para gerar 2000 bytes:
+![Screenshot from 2023-08-14 22-08-36](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/3693beaf-932c-40be-8b10-abe679643fdf)
+
+O resultado a partir do EIP 0x68423768, indica que precisamos de 1012 bytes para atingir o retorno:
+![Screenshot from 2023-08-14 22-18-16](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/bd9738eb-d92f-4a6c-88c4-32417da27727)
+
+
+
 
 	
 5. Verificar "bad bytes"

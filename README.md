@@ -7,6 +7,7 @@ buffer overflow
    	1.2 - Reversing - OK
 	
 3. Verificar quantos bytes são necessários para chegar no RET
+
 . 
 primeiros passos depurando a aplicação vulnerável, através do dbg rodamos a aplicação e selecionamos o arquivo m3u modificado com 3000 chars, ao rodarmos acontece uma exceção como visto na imagem do x32 dbg!
 

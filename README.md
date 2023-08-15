@@ -9,7 +9,7 @@ buffer overflow
 3. Verificar quantos bytes são necessários para chegar no RET
 
 . 
-primeiros passos depurando a aplicação vulnerável, através do dbg rodamos a aplicação e selecionamos o arquivo m3u modificado com 3000 chars, ao rodarmos acontece uma exceção como visto na imagem do x32 dbg!
+primeiros passos depurando a aplicação vulnerável, através do dbg rodamos a aplicação e selecionamos o arquivo m3u modificado com 4000 chars, ao rodarmos acontece uma exceção como visto na imagem do x32 dbg!
 
 ![Screenshot from 2023-08-14 22-40-47](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/d17452de-47f3-4544-b07c-1b91799423c8)
 
@@ -27,7 +27,9 @@ O pattern generator do msf foi usado para gerar 2000 bytes como examplo de que p
 
 ![Screenshot from 2023-08-14 22-08-36](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/3693beaf-932c-40be-8b10-abe679643fdf)
 
+
 O resultado a partir do EIP 0x68423768 mostrado na primeira imagem do debugger IDA pro, indica que precisamos de 1012 bytes para atingir o retorno, o mesmo resultado pode ser obtido pelo site buffer overflow pattern generator
+
 ![Screenshot from 2023-08-14 22-18-16](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/bd9738eb-d92f-4a6c-88c4-32417da27727)
 
 

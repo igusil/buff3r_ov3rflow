@@ -45,4 +45,10 @@ O resultado a partir do EIP 0x68423768 mostrado na primeira imagem do debugger I
 6.Exploit
 
 
+Ps.: Desativar o DEP (Data Execution Prevention) e ASLR (Address Space Layout Randomization)
+DEP: cli como admin e digite: bdcedit.exe /set {current} nx AlwaysOff
+ASLR: abra o regedit e busca [HKLM\System\Current\CurrentControlSet\Control\Session Manager\Memory Management\]
+cria um novo valor "DWORD" com nome "MoveImages" com valor 0
+
+
 

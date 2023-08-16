@@ -37,10 +37,16 @@ O resultado a partir do EIP 0x68423768 mostrado na primeira imagem do debugger I
 
 	
 5. Verificar "bad bytes"
+. Usei o immunity debugger neste passo:
+após realizar a instalação, realize a copia do arquivo mona.py para o diretorio C:\Program Files (x86)\Immunity Inc\Immunity Debugger\PyCommands
+o script python está disponivel para download aqui no repositório
 
-6. Criar shellcode sem os bad bytes
 
-7. Verificar como chamar o shellcode
+
+
+7. Criar shellcode sem os bad bytes
+
+8. Verificar como chamar o shellcode
 
 6.Exploit
 

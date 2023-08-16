@@ -38,9 +38,13 @@ O resultado a partir do EIP 0x68423768 mostrado na primeira imagem do debugger I
 	
 5. Verificar "bad bytes"
 . Usei o immunity debugger neste passo:
-após realizar a instalação, realize a copia do arquivo mona.py para o diretorio C:\Program Files (x86)\Immunity Inc\Immunity Debugger\PyCommands
-o script python está disponivel para download aqui no repositório
 
+após realizar a instalação do immunity, realize a copia do arquivo mona.py para o diretorio C:\Program Files (x86)\Immunity Inc\Immunity Debugger\PyCommands
+o script python está disponivel para download aqui no repositório.
+
+abra o immunity, rode a aplicação vulneravél usada como exemplo aqui e digite { !mona bytearray } sem chaves, irá gerar um pattern de 00 a ff:
+
+![Screenshot from 2023-08-15 23-20-35](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/961416e2-bfc4-4689-9414-9dbb28b8e5ba)
 
 
 

@@ -56,6 +56,7 @@ abra o immunity, rode a aplicação vulneravél usada como exemplo aqui e digite
 
 
 Ps.: Desativar o DEP (Data Execution Prevention) e ASLR (Address Space Layout Randomization)
+
 DEP: cli como admin e digite: bdcedit.exe /set {current} nx AlwaysOff
 
 ASLR: abra o regedit e busca [HKLM\System\Current\CurrentControlSet\Control\Session Manager\Memory Management\]

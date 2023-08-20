@@ -46,7 +46,7 @@ abra o immunity, rode a aplicação vulneravél usada como exemplo aqui e digite
 
 ![Screenshot from 2023-08-15 23-20-35](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/961416e2-bfc4-4689-9414-9dbb28b8e5ba)
 
-O codigo me python a seguir foi desenvolvido para gerar um exploit com os bad bytes mostrados no debugger
+O codigo em python a seguir foi desenvolvido para gerar um exploit com os bad bytes mostrados no debugger
 
 3.1
 

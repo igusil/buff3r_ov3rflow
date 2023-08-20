@@ -1,16 +1,16 @@
 # Vuln
-buffer overflow
-Todos os testes foram realizados em ambiente proprio virtualizado.
+buffer overflow.
 
+Todos os testes foram realizados em ambiente próprio virtualizado.
 1. Identificar a vulnerabilidade - OK
    
 	1.1 - Black Box (fuzzing) - OK
    	1.2 - Reversing - OK
-	
-2. Verificar quantos bytes são necessários para chegar no RET
 
-. 
-primeiros passos depurando a aplicação vulnerável, através do dbg rodamos a aplicação e selecionamos o arquivo m3u modificado com 4000 chars, ao rodarmos acontece uma exceção como visto na imagem do x32 dbg!
+ 
+2. Verificar quantos bytes são necessários para chegar no RET.
+
+Primeiros passos para depurar a aplicação vulnerável: através do dbg, executamos a aplicação e selecionamos o arquivo m3u modificado com 4000 chars. No entanto, ao executá-lo, ocorre uma exceção, conforme observado na imagem do x32 dbg.
 
 ![Screenshot from 2023-08-14 22-40-47](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/d17452de-47f3-4544-b07c-1b91799423c8)
 

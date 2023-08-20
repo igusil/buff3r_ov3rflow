@@ -61,8 +61,22 @@ f.write(lixo+ret+badbytes)
 f.close()
 
 
+Rodamos o programa vuln com play 2x e abrimos nosso exploit, irá dar exceção e prossiga com Shit + f9
+ECX, EBP e EIP será sobreescrito com 41414141,
+
+![Screenshot from 2023-08-19 22-58-35](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/d9abb8ce-36ca-4115-8667-be7dbc14bf8d)
+
+
+ESP estava em 0018E998, prossiga com o comando
+
+!mona compare -f bytearray.bin -a 0018E998
+
+![Screenshot from 2023-08-19 23-57-01](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/433f095a-8e8e-4142-a7a5-52e744fd3cb9)
+
+o resultado informa que a corrupção ocorreu após 1 byte
 
 3.2 
+
 
 7. Criar shellcode sem os bad bytes
 

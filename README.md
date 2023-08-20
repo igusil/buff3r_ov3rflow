@@ -1,12 +1,13 @@
 # Vuln
 buffer overflow
+Todos os testes foram realizados em ambiente proprio virtualizado.
 
 1. Identificar a vulnerabilidade - OK
    
 	1.1 - Black Box (fuzzing) - OK
    	1.2 - Reversing - OK
 	
-3. Verificar quantos bytes são necessários para chegar no RET
+2. Verificar quantos bytes são necessários para chegar no RET
 
 . 
 primeiros passos depurando a aplicação vulnerável, através do dbg rodamos a aplicação e selecionamos o arquivo m3u modificado com 4000 chars, ao rodarmos acontece uma exceção como visto na imagem do x32 dbg!
@@ -75,6 +76,16 @@ ESP estava em 0018E998, prossiga com o comando
 
 o resultado informa que a corrupção ocorreu após 1 byte
 
+inclusive podemos verificar na tabela que parou de funcionar no 0x00
+
+![Screenshot from 2023-08-20 00-14-35](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/9c46d833-3842-4524-8f27-3de20372e6c7)
+
+execute o comando: mona! bytearray -cpb '\x00'
+para gerar os badbytes sem x00, você pode copiar para o seu codigo python ou apenas deletar \x00 dos badbytes que já estão no seu codigo
+
+![Screenshot from 2023-08-20 00-16-57](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/b9a4692d-d574-480b-90da-befba4a4fa8c)
+
+e assim em diante com os proximos que bytes que forem problemáticos
 3.2 
 
 

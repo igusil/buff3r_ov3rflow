@@ -90,11 +90,13 @@ para gerar os badbytes sem x00, você pode copiar para o seu codigo python ou ap
 
 após retirar o \x00, rode o programa novamente e use no reverse o novo arquivo gerado.
 
+![Screenshot from 2023-08-22 21-23-43](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/4ca4de13-2b15-4e1f-bd92-c2f389245f58)
+
 chegou no endereço com erro, rode o comando do mona compare novamente
 
 !mona compare -f bytearray.bin -a < 0018E998 >		//endereço entre as tags
 
-![Screenshot from 2023-08-22 21-23-43](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/4ca4de13-2b15-4e1f-bd92-c2f389245f58)
+![Screenshot from 2023-08-22 21-27-21](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/44df17d8-1438-42eb-b78d-cdbeef2bf39c)
 
 
 e assim em diante com os proximos que bytes que forem problemáticos, você os retira do seu exploit.

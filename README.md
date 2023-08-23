@@ -38,7 +38,7 @@ O resultado a partir do EIP 0x68423768 mostrado na primeira imagem do debugger I
 
 
 	
-3. Verificar "bad bytes"
+3. Verificar "bad bytes" OK
 . Usei o immunity debugger neste passo:
 
 após realizar a instalação do immunity, realize a copia do arquivo mona.py para o diretorio C:\Program Files (x86)\Immunity Inc\Immunity Debugger\PyCommands
@@ -106,6 +106,14 @@ Desta vez a corrupção aconteceu após 8 bytes. Prosseguimos como da primeira v
 altere o seu codigo python.
 
 e assim em diante com os proximos que bytes que forem problemáticos, você os retira do seu exploit.
+
+Quando receber a mensagem Unmodified, significa que todo o shellcode não foi modificado e você identificou todos os badbytes.
+
+*-----BADBYTES-----*
+
+\x00, \x09, \x0a, \x1a
+
+*------------------*
 3.2 
 
 

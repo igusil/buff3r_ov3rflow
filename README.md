@@ -98,6 +98,7 @@ chegou no endereço com erro, rode o comando do mona compare novamente
 
 ![Screenshot from 2023-08-22 21-27-21](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/44df17d8-1438-42eb-b78d-cdbeef2bf39c)
 
+Desta vez a corrupção aconteceu após 8 bytes. Prosseguimos como da primeira vez, delete o byte que está negativo, desta vez o \x09.
 
 e assim em diante com os proximos que bytes que forem problemáticos, você os retira do seu exploit.
 3.2 

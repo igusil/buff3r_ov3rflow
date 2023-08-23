@@ -70,7 +70,7 @@ ECX, EBP e EIP será sobreescrito com 41414141,
 
 ESP estava em 0018E998, prossiga com o comando
 
-!mona compare -f bytearray.bin -a 0018E998
+!mona compare -f bytearray.bin -a 0018E998		//endereço entre as tags
 
 ![Screenshot from 2023-08-19 23-57-01](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/433f095a-8e8e-4142-a7a5-52e744fd3cb9)
 
@@ -80,12 +80,24 @@ inclusive podemos verificar na tabela que parou de funcionar no 0x00
 
 ![Screenshot from 2023-08-20 00-14-35](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/9c46d833-3842-4524-8f27-3de20372e6c7)
 
-execute o comando: mona! bytearray -cpb '\x00'
+execute o comando:
+
+mona! bytearray -cpb '\x00'
+
 para gerar os badbytes sem x00, você pode copiar para o seu codigo python ou apenas deletar \x00 dos badbytes que já estão no seu codigo
 
 ![Screenshot from 2023-08-20 00-16-57](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/b9a4692d-d574-480b-90da-befba4a4fa8c)
 
-e assim em diante com os proximos que bytes que forem problemáticos
+após retirar o \x00, rode o programa novamente e use no reverse o novo arquivo gerado.
+
+chegou no endereço com erro, rode o comando do mona compare novamente
+
+!mona compare -f bytearray.bin -a < 0018E998 >		//endereço entre as tags
+
+![Screenshot from 2023-08-22 21-23-43](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/4ca4de13-2b15-4e1f-bd92-c2f389245f58)
+
+
+e assim em diante com os proximos que bytes que forem problemáticos, você os retira do seu exploit.
 3.2 
 
 

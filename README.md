@@ -158,6 +158,12 @@ Vamos usar o metasploit no kali linux (use a distro que desejar, basta instalar 
 
 msfvenom -l payloads | grep "windows" | grep "reverse_tcp"
 
+![Screenshot from 2023-08-24 21-52-23](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/7e7197fa-fb0b-42c3-a176-b7eb9ef51f65)
+
+iremos usar o { windows/shell_reverse_tcp  } 32bits porque o nosso programa vuln é 32bits
+
+{ msfvenom -p windows/shell_reverse_tcp --list-options  }
+para verficar as opções do payload!
 
 Ps.: Desativar o DEP (Data Execution Prevention) e ASLR (Address Space Layout Randomization)
 

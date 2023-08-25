@@ -119,9 +119,44 @@ Quando receber a mensagem Unmodified, significa que todo o shellcode não foi mo
 
 7. Criar shellcode sem os bad bytes
 
-8. Verificar como chamar o shellcode
+Abra o arquivo .m3u com seu editor de texto. Sabemos que o problema acontece após 1012 bytes, prossiga deletando todo o restante de chars e deixe apenas as letras 'A'
+
+Substitua as quatro ultimas letras 'A' por 'B', após digite alguns chars 'C' e salve seu arquivo. Procedimento realizado apenas para que entenda facilmente!
+
+![Screenshot from 2023-08-24 20-08-23](https://github.com/igusil/holho/assets/89313216/6097f0fe-0b92-4e58-b5fd-1258f59919df)
+
+abra o programa x32dbg e rode o programa vulneravel, dê play 2x e abra seu arquivo modificado com as letras.
+
+![Screenshot from 2023-08-24 20-08-40](https://github.com/igusil/holho/assets/89313216/2288b6ad-5f3f-43b0-aca2-fd1504d4f248)
+
+Precisamos achar um endereço de memória que não tenha nenhum do bytes ruins e que tenha uma instrução JMP ESP ou CALL ESP.
+
+Selecione exibir/Memory Map
+
+![Screenshot from 2023-08-24 20-21-42](https://github.com/igusil/holho/assets/89313216/9d14a09b-690a-44ee-a442-664997b8edf9)
+
+Ou podemos usar o Immunity Debugger para facilitar nossa vida! 
+
+**************************************************************************************************************************************
+
+Execute o immunity e rode seu programa vuln.
+após rodar, digite na barra de pesquisa: !searchcode jmp esp.
+vá em view/log e terá essas informações
+
+![Screenshot from 2023-08-24 21-23-06](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/2c236aec-f3f9-450b-892f-25a468365333)
+
+selecionamos a memória que não tem \x00, \x09, \x0a, \x1a
+
+selecionamos 0x7dd93132 - kernel32.dll
+
+9. Verificar como chamar o shellcode
+    
+	0x7dd93132
 
 6.Exploit
+Vamos usar o metasploit no kali linux (use a distro que desejar, basta instalar o metasploit), para gerar o shellcode. Estamos buscando um payload de conexão reversa para essa demonstração.
+
+msfvenom -l payloads | grep "windows" | grep "reverse_tcp"
 
 
 Ps.: Desativar o DEP (Data Execution Prevention) e ASLR (Address Space Layout Randomization)

@@ -184,9 +184,9 @@ Inserimos o shellcode gerado no nosso exploit com o endereço em litle endian po
 
 Resumindo: O exploit irá colocar 1012 A's, irá colocar o endereço de retorno, no endereço de retorno ele pula para um jmp esp e no esp estará o nosso shellcode!
 
-*****************************************************************************************************************************************************************
-
 iremos adicionar uma instrução de assembly que não faz nada chamada { nops }, 60 nops,por que 60 é multiplo de 4 e nossa memória 32bits está alinhada de 4bytes. Nosso exploit cai nos nops e vai pro shellcode.
+
+*****************************************************************************************************************************************************************
 
 ![Screenshot from 2023-08-24 22-38-13](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/a4dff961-6ea2-49b1-80d9-9a8f03e85542)
 

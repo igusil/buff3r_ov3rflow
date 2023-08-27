@@ -40,9 +40,9 @@ após realizar a instalação do immunity, realize a copia do arquivo mona.py pa
 o script python está disponivel para download aqui no repositório.
 
 abra o immunity, rode a aplicação vulneravél usada como exemplo aqui e digite { !mona bytearray } sem chaves, irá gerar um pattern de 00 a ff:
-
+*****************************************************************************************************************************************************************
 ![Screenshot from 2023-08-15 23-20-35](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/961416e2-bfc4-4689-9414-9dbb28b8e5ba)
-
+*****************************************************************************************************************************************************************
 O codigo em python a seguir foi desenvolvido para gerar um exploit com os bad bytes mostrados no debugger
 
 3.1
@@ -60,30 +60,30 @@ f.close()
 
 Rodamos o programa vuln com play 2x e abrimos nosso exploit, irá dar exceção e prossiga com Shit + f9
 ECX, EBP e EIP será sobreescrito com 41414141,
-
+*****************************************************************************************************************************************************************
 ![Screenshot from 2023-08-19 22-58-35](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/d9abb8ce-36ca-4115-8667-be7dbc14bf8d)
-
+*****************************************************************************************************************************************************************
 
 ESP estava em 0018E998, prossiga com o comando
 
 !mona compare -f bytearray.bin -a 0018E998		//endereço entre as tags
-
+*****************************************************************************************************************************************************************
 ![Screenshot from 2023-08-19 23-57-01](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/433f095a-8e8e-4142-a7a5-52e744fd3cb9)
-
-o resultado informa que a corrupção ocorreu após 1 byte
+*****************************************************************************************************************************************************************
+O resultado informa que a corrupção ocorreu após 1 byte
 
 inclusive podemos verificar na tabela que parou de funcionar no 0x00
-
+*****************************************************************************************************************************************************************
 ![Screenshot from 2023-08-20 00-14-35](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/9c46d833-3842-4524-8f27-3de20372e6c7)
-
+*****************************************************************************************************************************************************************
 execute o comando:
 
 mona! bytearray -cpb '\x00'
 
 para gerar os badbytes sem x00, você pode copiar para o seu codigo python ou apenas deletar \x00 dos badbytes que já estão no seu codigo
-
+*****************************************************************************************************************************************************************
 ![Screenshot from 2023-08-20 00-16-57](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/b9a4692d-d574-480b-90da-befba4a4fa8c)
-
+*****************************************************************************************************************************************************************
 após retirar o \x00, rode o programa novamente e use no reverse o novo arquivo gerado.
 
 ![Screenshot from 2023-08-22 21-23-43](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/4ca4de13-2b15-4e1f-bd92-c2f389245f58)

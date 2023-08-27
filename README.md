@@ -184,7 +184,7 @@ iremos adicionar uma instrução de assembly que não faz nada chamada { nops },
 *****************************************************************************************************************************************************************
 
 ![Screenshot from 2023-08-24 22-38-13](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/a4dff961-6ea2-49b1-80d9-9a8f03e85542)
-
+*****************************************************************************************************************************************************************
 
 Ps.: Desativar o DEP (Data Execution Prevention) e ASLR (Address Space Layout Randomization)
 

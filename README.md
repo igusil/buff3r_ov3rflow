@@ -34,7 +34,7 @@ O resultado a partir do EIP 0x68423768 mostrado na primeira imagem do debugger I
 *****************************************************************************************************************************************************************
 ![Screenshot from 2023-08-14 22-18-16](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/bd9738eb-d92f-4a6c-88c4-32417da27727)
 *****************************************************************************************************************************************************************
-3. Verificar "bad bytes" OK
+3. Verificar "bad bytes"
 . Usei o immunity debugger neste passo:
 
 após realizar a instalação do immunity, realize a copia do arquivo mona.py para o diretorio C:\Program Files (x86)\Immunity Inc\Immunity Debugger\PyCommands

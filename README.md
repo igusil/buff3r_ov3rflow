@@ -86,9 +86,9 @@ para gerar os badbytes sem x00, você pode copiar para o seu codigo python ou ap
 ![Screenshot from 2023-08-20 00-16-57](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/b9a4692d-d574-480b-90da-befba4a4fa8c)
 *****************************************************************************************************************************************************************
 após retirar o \x00, rode o programa novamente e use no reverse o novo arquivo gerado.
-
+*****************************************************************************************************************************************************************
 ![Screenshot from 2023-08-22 21-23-43](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/4ca4de13-2b15-4e1f-bd92-c2f389245f58)
-
+*****************************************************************************************************************************************************************
 chegou no endereço com erro, rode o comando do mona compare novamente
 
 !mona compare -f bytearray.bin -a < 0018E998 >		//endereço entre as tags

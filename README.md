@@ -92,9 +92,9 @@ após retirar o \x00, rode o programa novamente e use no reverse o novo arquivo 
 chegou no endereço com erro, rode o comando do mona compare novamente
 
 !mona compare -f bytearray.bin -a < 0018E998 >		//endereço entre as tags
-
+*****************************************************************************************************************************************************************
 ![Screenshot from 2023-08-22 21-27-21](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/44df17d8-1438-42eb-b78d-cdbeef2bf39c)
-
+*****************************************************************************************************************************************************************
 Desta vez a corrupção aconteceu após 8 bytes. Prosseguimos como da primeira vez, delete o byte que está negativo, desta vez o \x09.
 
 !mona bytearray -cpb '\x00\x09'

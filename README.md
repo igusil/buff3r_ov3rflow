@@ -118,7 +118,7 @@ Quando receber a mensagem Unmodified, significa que todo o shellcode não foi mo
 Abra o arquivo .m3u com seu editor de texto. Sabemos que o problema acontece após 1012 bytes, prossiga deletando todo o restante de chars e deixe apenas as letras 'A'
 
 Substitua as quatro ultimas letras 'A' por 'B', após digite alguns chars 'C' e salve seu arquivo. Procedimento realizado apenas para que entenda facilmente!
-
+*****************************************************************************************************************************************************************
 ![Screenshot from 2023-08-24 20-08-23](https://github.com/igusil/holho/assets/89313216/6097f0fe-0b92-4e58-b5fd-1258f59919df)
 
 abra o programa x32dbg e rode o programa vulneravel, dê play 2x e abra seu arquivo modificado com as letras.

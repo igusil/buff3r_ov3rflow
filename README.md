@@ -138,6 +138,7 @@ Ou podemos usar o Immunity Debugger para facilitar nossa vida!
 Execute o immunity e rode seu programa vuln.
 após rodar, digite na barra de pesquisa: !searchcode jmp esp.
 vá em view/log e terá essas informações
+*****************************************************************************************************************************************************************
 
 ![Screenshot from 2023-08-24 21-23-06](https://github.com/igusil/buff3r_ov3rflow/assets/89313216/2c236aec-f3f9-450b-892f-25a468365333)
 

@@ -128,7 +128,7 @@ abra o programa x32dbg e rode o programa vulneravel, dê play 2x e abra seu arqu
 Precisamos achar um endereço de memória que não tenha nenhum do bytes ruins e que tenha uma instrução JMP ESP ou CALL ESP.
 
 Selecione exibir/Memory Map
-
+*****************************************************************************************************************************************************************
 ![Screenshot from 2023-08-24 20-21-42](https://github.com/igusil/holho/assets/89313216/9d14a09b-690a-44ee-a442-664997b8edf9)
 
 Ou podemos usar o Immunity Debugger para facilitar nossa vida! 

@@ -116,7 +116,7 @@ Quando receber a mensagem Unmodified, significa que todo o shellcode não foi mo
 *------------------*
 3.2 
 
-
+****************************************************************************************************************************************************************
 7. Criar shellcode sem os bad bytes
 
 Abra o arquivo .m3u com seu editor de texto. Sabemos que o problema acontece após 1012 bytes, prossiga deletando todo o restante de chars e deixe apenas as letras 'A'
